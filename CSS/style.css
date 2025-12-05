@@ -1,0 +1,82 @@
+.container {
+  display: grid;
+}
+.menu {
+  grid-column-start: 6;
+  grid-column-end: 12;
+  justify-content: center; /*centraliza o menu*/
+  gap: 20px;
+}
+
+.imagem_usuario img {
+  width: 180px; /* coloque o tamanho desejado */
+  height: auto; /* mantém a proporção */
+  border-radius: 10px;
+}
+
+.principal {
+  grid-column-start: 4; /* Define que o elemento começa na coluna 4 do grid */
+  grid-column-end: 12; /* Define que o elemento termina na coluna 12 do grid, ocupando o espaço entre as colunas 4 e 11 */
+  padding-left: 15px; /* Espaçamento interno à esquerda do conteúdo */
+  padding-right: 15px; /* Espaçamento interno à direita do conteúdo */
+  text-align: justify; /* Faz o texto ocupar toda a largura disponível,alinhando as margens esquerda e direita */
+}
+/* media query para dispositivos móveis */
+@media only screen and (max-width: 767px) {
+  .wrapper {
+    grid-column-start: 1;
+    grid-column-end: 1;
+  }
+
+  .principal {
+    grid-column-start: 1;
+    grid-column-end: 1;
+  }
+}
+body {
+  margin: 0;
+}
+
+header {
+  grid-column-start: 1;
+  grid-column-end: 12;
+  background-color: #bf4b2e;
+}
+
+footer {
+  grid-column-start: 1;
+  grid-column-end: 12;
+  background-color: #bf4b2e;
+  color: white;
+  text-align: center;
+}
+
+ul {
+  list-style-type: none;
+  color: #bf4b2e;
+}
+
+a,
+a:link {
+  text-decoration: none;
+  padding: 8px 16px;
+  border: solid #bf4b2e 1px;
+}
+
+li {
+  float: left;
+}
+
+a:hover {
+  background-color: #bf4b2e;
+  color: white;
+}
+input,
+textarea {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 12px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  font-size: 16px;
+}
